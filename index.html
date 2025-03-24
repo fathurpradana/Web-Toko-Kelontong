@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penjualan Kelontong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aplikasi Penjualan Toko Kelontong</h1>
+    </header>
+    <main>
+        <section id="produk">
+            <h2>Data Produk</h2>
+            <form id="form-produk">
+                <input type="text" id="nama-produk" placeholder="Nama Produk" required>
+                <input type="number" id="stok-produk" placeholder="Stok" required>
+                <input type="number" id="harga-produk" placeholder="Harga" required>
+                <button type="submit">Tambah Produk</button>
+            </form>
+            <div id="daftar-produk"></div>
+        </section>
+
+        <section id="pelanggan">
+            <h2>Data Pelanggan</h2>
+            <form id="form-pelanggan">
+                <input type="text" id="nama-pelanggan" placeholder="Nama Pelanggan" required>
+                <input type="text" id="alamat-pelanggan" placeholder="Alamat" required>
+                <input type="tel" id="telepon-pelanggan" placeholder="Nomor Telepon" required>
+                <button type="submit">Tambah Pelanggan</button>
+            </form>
+            <div id="daftar-pelanggan"></div>
+        </section>
+
+        <section id="transaksi">
+            <h2>Transaksi Penjualan</h2>
+            <form id="form-transaksi">
+                <input type="text" id="nama-barang" placeholder="Nama Barang" required>
+                <input type="number" id="jumlah-barang" placeholder="Jumlah" required>
+                <input type="number" id="harga-barang" placeholder="Harga Satuan" required>
+                <input type="text" id="nama-pembeli" placeholder="Nama Pembeli" required>
+                <button type="submit">Tambah Transaksi</button>
+            </form>
+            <div id="daftar-transaksi"></div>
+        </section>
+
+        <section id="laporan-stok">
+            <h2>Laporan Stok/Persediaan</h2>
+            <button id="tampilkan-laporan">Tampilkan Laporan Stok</button>
+            <div id="laporan-produk"></div>
+        </section>
+
+        <section id="laporan-pelanggan">
+            <h2>Laporan Data Pelanggan</h2>
+            <button id="tampilkan-laporan-pelanggan">Tampilkan Laporan Pelanggan</button>
+            <div id="laporan-pelanggan"></div>
+        </section>
+
+        <section id="laporan-faktur">
+            <h2>Laporan Faktur Jual</h2>
+            <button id="tampilkan-faktur">Tampilkan Faktur</button>
+            <div id="laporan-faktur"></div>
+        </section>
+
+        <section id="rekap-penjualan">
+            <h2>Rekapitulasi Penjualan</h2>
+            <button id="rekap-harian">Rekap Harian</button>
+            <button id="rekap-bulanan">Rekap Bulanan</button>
+            <button id="rekap-tahunan">Rekap Tahunan</button>
+            <div id="laporan-rekap"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
